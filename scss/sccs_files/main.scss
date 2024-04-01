@@ -1,0 +1,47 @@
+@import "mixin";
+@import "var";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    height: $height;
+    width: 100vw;
+    background-color: $color;
+    @include flex_code();
+    
+
+    h1{
+        @include font_size(50px);
+        color: white;
+        & :hover{
+            color: red;
+        }
+        }
+        
+    }
+    h1:hover{
+        color: red;
+    }
+    
+    p {
+        color: rgb(140, 0, 255);
+        letter-spacing: 10px;
+        font-family: monospace;
+        text-decoration: line-through rgb(0, 255, 255);
+        
+        @include font_size(20px);
+        
+    
+    }    
+
+
+
+
+
+
